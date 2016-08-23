@@ -16,7 +16,7 @@ const (
 	sequenceMask = -1 ^ -1<<sequenceBits
 )
 
-var Epoch = 1471927533987
+var Epoch int64 = 1471927533987
 
 type UUID struct {
 	sync.Mutex
