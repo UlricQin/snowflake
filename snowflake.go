@@ -7,8 +7,6 @@ import (
 )
 
 const (
-	Epoch = 1471927533987
-
 	workerBits     = 10
 	sequenceBits   = 12
 	workerShift    = 12
@@ -17,6 +15,8 @@ const (
 	maxWorker    = -1 ^ -1<<workerBits
 	sequenceMask = -1 ^ -1<<sequenceBits
 )
+
+var Epoch = 1471927533987
 
 type UUID struct {
 	sync.Mutex
